@@ -1,15 +1,16 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
 
 const Avatar = (props) => {
-        const element = (
-            <img
-          className="avatar"
-          src={props.user.avatarUrl}
-          alt={props.user.name}
-            />
-    )
-    return element
+  console.log(props)
+  const element = (
+    
+    <img
+      className="avatar"
+      src={props.avatarUrl}
+      alt={props.name}
+    />
+  )
+  return element
 }
-    export default Avatar
+export default Avatar
