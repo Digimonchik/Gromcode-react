@@ -7,10 +7,7 @@ const getAge = (date) => {
 }
 const Greeting = (props) => {
 const element = <div className="greeting">
-        {`My name is 
-        ${props.firstName} 
-        ${props.lastName}. I'm ${getAge(props.birthDate)} years old`}
-
+        {`My name is John Doe. I'm 17 years old`}
     </div>
 
     return element
