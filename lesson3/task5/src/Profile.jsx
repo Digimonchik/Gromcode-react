@@ -11,7 +11,7 @@ const Profile = (props) => {
             {`Was born ${moment(props.user.birthDate).format('DD MMM YY')} in ${props.user.birthPlace}`}
         </div>
     </>)
-    return element 
+    return element
 }
 
 export default Profile

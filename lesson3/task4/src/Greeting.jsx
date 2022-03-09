@@ -6,12 +6,14 @@ const getAge = (date) => {
     return Math.floor((curentTime - timeOfbirth) / 31536000000);
 }
 const Greeting = (props) => {
-return <div className="greeting">
+const element = <div className="greeting">
         {`My name is 
         ${props.firstName} 
         ${props.lastName}. I'm ${getAge(props.birthDate)} years old`}
 
     </div>
+
+    return element
 }
 
 export default Greeting
