@@ -7,12 +7,12 @@ function Greeting(props) {
         const curentTime = new Date();
         return Math.floor((curentTime - timeOfbirth) / 31536000000);
     }
-const element = <div className="greeting">
+const element = (<div className="greeting">
         {`My name is 
         ${props.firstName} 
         ${props.lastName}. I'm ${getAge(props.birthDate)} years old`}
 
-    </div>
+    </div>)
 
     return element
 }
