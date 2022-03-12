@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-export default class Counter extends Component {
+class Counter extends Component {
   constructor(props) {
-    super(props);
+      super(props);
+      
+      props.start = [pr]
       this.state = {
         counter: props.start
       };
@@ -13,13 +15,12 @@ export default class Counter extends Component {
           })
       }, props.interval)
   }
-
     
   render() {
     return (
-      <>
             <div className='counter'> {this.state.counter}</div>
-      </>
     );
   }
 }
+
+export default Counter
