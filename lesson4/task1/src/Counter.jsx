@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
   constructor(props) {
-      super(props);
-      
-      props.start = [pr]
+    super(props);
+    
       this.state = {
         counter: props.start
       };
@@ -18,9 +17,10 @@ class Counter extends Component {
     
   render() {
     return (
-            <div className='counter'> {this.state.counter}</div>
+            <div className='counter'>{this.state.counter}</div>
     );
   }
 }
 
 export default Counter
+    
