@@ -6,8 +6,8 @@ class GoodButton extends Component {
 
     render() {
       
-        const alertMessage = (e) => {
-        alert(e.target.textContent)
+        const alertMessage = (event) => {
+        alert(event.target.textContent)
     }
     return (
       <button className = 'fancy-button' onClick={alertMessage}> Click me!</button>
