@@ -8,7 +8,7 @@ alertMessage(event) {
 
     render() {
     return (
-      <button className = 'fancy-button' onClick={alertMessage}> Click me!</button>
+      <button className = 'fancy-button' onClick={() => alertMessage()}> Click me!</button>
     );
   }
 }
