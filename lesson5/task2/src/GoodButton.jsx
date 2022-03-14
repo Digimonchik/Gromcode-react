@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 
 class GoodButton extends Component {
-alertMessage(event) {
-        alert(event.target.textContent)
+alertMessage(e) {
+        alert(e.target.textContent)
     }
 
     render() {
     return (
-      <button className = 'fancy-button' onClick={() => alertMessage()}> Click me!</button>
+      <button className = 'fancy-button' onClick={this.alertMessage}> Click me!</button>
     );
   }
 }
