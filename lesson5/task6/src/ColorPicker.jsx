@@ -18,7 +18,7 @@ export default class Toggler extends Component {
   //     value: newValue
   //   })
   // }
-  сhangeColor = (color) => {
+  setColor = (color) => {
     this.setState({
           value: color
         })
@@ -35,9 +35,9 @@ export default class Toggler extends Component {
     <div>
         <div className="picker__title">{this.state.value}</div>
                 <div>
-          <button className="picker__button picker__button_coral" style={{backgroundColor: 'coral', }} onMouseEnter={() => this.changeColor('Coral')} onMouseLeave={() => this.clearValue()}/>
-                <button className="picker__button picker__button_aqua" style={{backgroundColor: 'aqua',}} onMouseEnter = {(e) => this.changeColor('Aqua')} onMouseLeave={() => this.clearValue()}/>
-                <button className="picker__button picker__button_bisque" style={{backgroundColor: 'bisque',}} onMouseEnter = {(e) => this.changeColor('Bisque')} onMouseLeave={() => this.clearValue()}/>
+          <button className="picker__button picker__button_coral" style={{backgroundColor: 'coral', }} onMouseEnter={() => this.setColor('Coral')} onMouseLeave={() => this.clearValue()}/>
+                <button className="picker__button picker__button_aqua" style={{backgroundColor: 'aqua',}} onMouseEnter = {() => this.setColor('Aqua')} onMouseLeave={() => this.clearValue()}/>
+                <button className="picker__button picker__button_bisque" style={{backgroundColor: 'bisque',}} onMouseEnter = {() => this.setColor('Bisque')} onMouseLeave={() => this.clearValue()}/>
       </div>
     </div>
     )
