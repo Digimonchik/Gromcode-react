@@ -10,7 +10,7 @@ class GoodButton extends Component {
         alert('Good job!')
     }
     return (
-      <button className = 'fancy-button' onClick={alertMessage}> Click me!</button>
+      <button className = 'fancy-button' onClick={alertMe}> Click me!</button>
     );
   }
 }
