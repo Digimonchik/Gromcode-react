@@ -10,14 +10,14 @@ export default class Auth extends Component {
             isLoggedIn: false
         }
     }
-    onLogout = () =>
+    handleLogout = () =>
     {
         this.setState({
     isLoggedIn: false
         })
         
         }
-    onLogin = () =>
+    handleLogin = () =>
     {
         this.setState({
     isLoggedIn: true
@@ -29,7 +29,7 @@ export default class Auth extends Component {
             <div className='panel'>
                 <Greeting isLoggedIn={this.state.isLoggedIn}></Greeting>
             {this.state.isLoggedIn ? <Logout onLogout = {this.onLogout}/> : <Login onLogin={this.onLogin}/>}
-                </div>
+             </div>
                 )
     
     }
