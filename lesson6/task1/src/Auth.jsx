@@ -1,8 +1,7 @@
 import Login from './Login';
 import Logout from './Logout';
 import React, { Component } from 'react';
-import UserGreeting from './UserGreeting';
-import GuestGreeting from './GuestGreeting';
+import Greeting from './Greeting';
 export default class Auth extends Component {
     constructor(props) {
         super(props);
@@ -28,10 +27,7 @@ export default class Auth extends Component {
     render() {
         return (
             <div>
-                <div>
-                    {this.state.isLoggedIn ? <UserGreeting/> : <GuestGreeting/>}
-                </div>
-                
+                <Greeting isLoggedIn = {this.state.isLoggedIn}></Greeting>
             <div className='panel'>{this.state.isLoggedIn ? <Logout onLogout = {this.onLogout}/> : <Login onLogin={this.onLogin}/>}
                 </div>
                 </div>
