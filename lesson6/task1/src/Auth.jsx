@@ -1,5 +1,5 @@
-// import Login from './Login';
-// import Logout from './Logout';
+import Login from './Login';
+import Logout from './Logout';
 import React, { Component } from 'react';
 import Greeting from './Greeting';
 export default class Auth extends Component {
@@ -28,15 +28,10 @@ export default class Auth extends Component {
         return (
             <div className='panel'>
                 <Greeting isLoggedIn={this.state.isLoggedIn}></Greeting>
-                <div>
-                    {this.state.isLoggedIn ? (
-                        <button  className = 'btn logout' onClick={this.onLogout}>Logout</button>
-                    ) :(<button  className = 'btn login' onClick={this.onLogin}>Login</button>)}
+            <div>{this.state.isLoggedIn ? <Logout onLogout = {this.onLogout}/> : <Login onLogin={this.onLogin}/>}
                 </div>
-            {/* <div>{this.state.isLoggedIn ? <Logout onLogout = {this.onLogout}/> : <Login onLogin={this.onLogin}/>}
-                </div> */}
                 </div>
                 )
     
     }
-}
+}3
