@@ -26,9 +26,9 @@ export default class Auth extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='panel'>
                 <Greeting isLoggedIn = {this.state.isLoggedIn}></Greeting>
-            <div className='panel'>{this.state.isLoggedIn ? <Logout onLogout = {this.onLogout}/> : <Login onLogin={this.onLogin}/>}
+            <div>{this.state.isLoggedIn ? <Logout onLogout = {this.onLogout}/> : <Login onLogin={this.onLogin}/>}
                 </div>
                 </div>
                 )
