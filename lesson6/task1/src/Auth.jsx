@@ -28,8 +28,8 @@ export default class Auth extends Component {
         return (
             <div className='panel'>
                 <Greeting isLoggedIn={this.state.isLoggedIn}/>
-            {this.state.isLoggedIn ? <Logout onLogout = {this.handleLogout}/> : <Login onLogin={this.handleLogin}/>}
-             </div>
+            <div>{this.state.isLoggedIn ? <Logout onLogout = {this.handleLogout}/> : <Login onLogin={this.handleLogin}/>}
+             </div></div>
                 )
     
     }
