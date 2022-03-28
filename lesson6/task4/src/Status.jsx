@@ -3,10 +3,12 @@ import Online from './Online';
 import Offline from './Offline';
 
 export default class Status extends Component {
-    state = {
+    constructor(props) {
+        super(props)
+        this.state = {
         isOnline: false 
     }
-
+}
 reconnect = () => {
     this.setState({
         isOnline: true
