@@ -2,9 +2,7 @@ import React from 'react';
 
 const Online = () => {
 
-return <div className="status">
-<span className="status__text">{'All good!'}</span>
-</div>
+return <div>'All good!'</div>
 }
 
 export default Online
