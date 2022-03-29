@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import Online from './Online';
 import Offline from './Offline';
 
-export default class Status extends Component {
 
-state = {
-        isOnline: false
-    }
+const Status = (props) => {
+
 
 // reconnect = () => {
 //     this.setState({
@@ -14,11 +12,11 @@ state = {
 //     })
 // }
 
-  render() {
-     if (this.state.isOnline) {
+if (props.isOnline) {
          return <Online/>
      }
     return <Offline/>
   }
-}
+
+export default Status
 

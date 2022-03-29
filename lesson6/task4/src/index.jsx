@@ -8,5 +8,5 @@ import './index.scss'
 const rootElement = document.querySelector('#root')
 
 ReactDOM.render(
-    <Status/>, rootElement
+    <Status isOnline/>, rootElement
 )
