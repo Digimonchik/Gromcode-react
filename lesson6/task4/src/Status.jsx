@@ -8,17 +8,17 @@ state = {
         isOnline: false
     }
 
-reconnect = () => {
-    this.setState({
-        isOnline: true
-    })
-}
+// reconnect = () => {
+//     this.setState({
+//         isOnline: true
+//     })
+// }
 
   render() {
      if (this.state.isOnline) {
          return <Online/>
      }
-    return <Offline reconnect = {this.reconnect}/>
+    return <Offline/>
   }
 }
 
