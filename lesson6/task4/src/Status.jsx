@@ -16,7 +16,10 @@ reconnect = () => {
 }
 
   render() {
-     return this.state.isOnline ? <Online/> : <Offline reconnect = {this.reconnect}/>
+     if (this.state.isOnline) {
+         return <Online/>
+     }
+    return <Offline reconnect = {this.reconnect}/>
   }
 }
 
