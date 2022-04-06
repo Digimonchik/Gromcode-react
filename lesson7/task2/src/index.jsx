@@ -1,13 +1,35 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './index.scss';
-import NumbersList from './NumbersList';
-
-
-const numbers = [1,2,3,4,5]
+import UsersList from './UsersList';
+const users = [
+    {
+      id: 'id-0',
+      age: 21,
+      name: 'Bob',
+    },
+    {
+      id: 'id-1',
+      age: 17,
+      name: 'Tom',
+    },
+    {
+      id: 'id-2',
+      age: 18,
+      name: 'Tad',
+    },
+    {
+      id: 'id-3',
+      age: 45,
+      name: 'Sam',
+    },
+  ];
+  
 
 const rootElement = document.querySelector('#root')
 
 ReactDOM.render(
-    <NumbersList numbers = {numbers} />, rootElement
+    <div>
+    <UsersList users = {users} />
+    </div>, rootElement
 )
