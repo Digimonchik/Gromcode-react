@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import moment from 'moment';
+
 
 export default class Transaction extends Component {
   render() {
     return (
       <li className= 'transaction'>
-    <span className="transaction__date"></span>
-    <span className="transaction__time"></span>
-    <span className="transaction__assets">USD → EUR</span>
-    <span className="transaction__rate">0.8</span>
-    <span className="transaction__amount">1,200</span>
+    <span className="transaction__date">{moment(this.props.time).format("DD MMM")}</span>
+    <span className="transaction__time">{moment(this.props.time).format("HH:mm")}</span>
+    <span className="transaction__assets">{`${this.props.from}→${this.props.to}`}</span>
+    <span className="transaction__rate">{this.props.rate}</span>
+    <span className="transaction__amount">{new Intl.NumberFormat('en-GB').format(this.props.amount)}</span>
       </li> 
     );
   }
