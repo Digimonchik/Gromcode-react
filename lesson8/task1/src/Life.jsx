@@ -22,7 +22,7 @@ componentWillUnmount() {
   render() {
       console.log('return React element to build DOM')
     return (
-      <div > textInComponent </div>
+      <div ></div>
     );
   }
 }
