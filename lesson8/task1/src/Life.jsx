@@ -16,10 +16,11 @@ componentDidUpdate(prevProps, prevState) {
     console.log('componentDidUpdate(prevProps, prevState): some updates based on new props')
 }
 componentWillUnmount() {
-    console.log(`cleanup before DOM related to component will be removed`)
+    console.log(`componentWillUnmount(): cleanup before DOM related to component will be removed`)
 }
 
   render() {
+      console.log('return React element to build DOM')
     return (
       <div > textInComponent </div>
     );
