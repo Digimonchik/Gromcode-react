@@ -6,7 +6,7 @@ export default class Life extends Component {
         console.log(`constructor: good place to create state`)
     }
 componentDidMount(){
-    console.log(`componentDidMount: API calls`)
+    console.log(`componentDidMount: API calls, subscriptions`)
 }
 
 shouldComponentUpdate(nextProps, nextState) {
