@@ -8,6 +8,7 @@ export default class Dimensions extends Component {
 componentDidMount() {
     window.addEventListener('resize',  this.onResize)
     const {innerWidth, innerHeight} = window
+    this.setDimesion(innerWidth, innerHeight)
     document.title = `${innerWidth} x ${innerHeight}`
 
 }
@@ -18,8 +19,8 @@ componentWillUnmount() {
 setDimesion = (width, height) => {
     this.setState(
         {
-            width: width,
-            height: height
+            width,
+            height
         }
     )
 }
