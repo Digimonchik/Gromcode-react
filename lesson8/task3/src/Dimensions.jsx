@@ -33,8 +33,8 @@ onResize = e => {
     }
   render() {
     return (
-      <div>
-          {`${this.state.width}px x ${this.state.height}px`}
+      <div className='dimensions'>
+          {`${this.state.width}px - ${this.state.height}px`}
       </div>
     );
   }
