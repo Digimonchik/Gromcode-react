@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 export default class Dimensions extends Component {
   state = {
-            width: 0,
-            height: 0     
+            width: window.innerWidth,
+            height: window.innerHeight
         };
 componentDidMount() {
     window.addEventListener('resize',  this.onResize)
