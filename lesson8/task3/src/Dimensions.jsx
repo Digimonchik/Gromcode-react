@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 
 export default class Dimensions extends Component {
   state = {
-            width: window.innerWidth,
-            height: window.innerHeight
+            width: null,
+            height: null
         };
 componentDidMount() {
     window.addEventListener('resize',  this.onResize)
     const {innerWidth, innerHeight} = window
     this.setDimesion(innerWidth, innerHeight)
-    document.title = `${innerWidth} x ${innerHeight}`
-
 }
 
 componentWillUnmount() {
@@ -23,6 +21,8 @@ setDimesion = (width, height) => {
             height
         }
     )
+    document.title = `${innerWidth} x ${innerHeight}`
+
 }
 
 onResize = e => {
@@ -34,7 +34,7 @@ onResize = e => {
   render() {
     return (
       <div>
-          {innerWidth} x {innerHeight}
+          {this.state.width} x {this.state.height}
       </div>
     );
   }
