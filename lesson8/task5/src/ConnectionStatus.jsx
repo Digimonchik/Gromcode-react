@@ -19,6 +19,11 @@ export default class ConnectionStatus extends Component {
         window.addEventListener('offline', this.setStatus)
         }
 
+    componentWillUnmount() {
+      window.removeEventListener('online', this.setStatus)
+        window.removeEventListener('offline', this.setStatus)
+    }
+
 
     render() {
         let newClass;
