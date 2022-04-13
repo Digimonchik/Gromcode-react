@@ -24,7 +24,7 @@ export default class ConnectionStatus extends Component {
         let newClass;
         newClass = this.state.OnlineStatus ? `status` : `status status_offline`
     return (
-      <div className={newClass}>Online</div>
+      <div className={newClass}>online</div>
     );
   }
 }
