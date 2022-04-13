@@ -18,15 +18,15 @@ export default class ConnectionStatus extends Component {
         window.addEventListener('offline', this.setStatus)
         }
 
-    componentWillUnmount() {
-      window.removeEventListener('online', this.setStatus)
-        window.removeEventListener('offline', this.setStatus)
-    }
+    // componentWillUnmount() {
+    //   window.removeEventListener('online', this.setStatus)
+    //     window.removeEventListener('offline', this.setStatus)
+    // }
 
 
     render() {
     return (
-      this.state.OnlineStatus ? <div className = 'status'>Online</div> : <div className = 'status status_offline'>offline</div>
+      this.state.OnlineStatus ? <div className = 'status'>online</div> : <div className = 'status status_offline'>offline</div>
       
     );
   }
