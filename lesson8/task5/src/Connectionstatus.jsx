@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Connectionstatus extends Component {
+export default class ConnectionStatus extends Component {
   state = {
       OnlineStatus: true
   }
