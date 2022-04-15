@@ -7,6 +7,6 @@ const rootElement = document.querySelector("#root"
 )
 
 ReactDOM.render(
-    < ConnectionStatus
+    <ConnectionStatus
     />, rootElement
 )
