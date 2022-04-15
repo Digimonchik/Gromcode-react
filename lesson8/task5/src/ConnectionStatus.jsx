@@ -11,6 +11,7 @@ export default class ConnectionStatus extends Component {
             OnlineStatus: !this.state.OnlineStatus
         }
     )
+    console.log(this.state.OnlineStatus)
   }
   componentDidUpdate() {
     window.addEventListener('online', this.setStatus)
