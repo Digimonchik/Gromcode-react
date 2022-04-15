@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class ConnectionStatus extends Component {
   state = {
-      status: false
+      status: true
   }
 
   setStatus  = () => {
@@ -27,7 +27,7 @@ export default class ConnectionStatus extends Component {
 
     render() {
     return (
-      this.state.status ? <div className = 'status'>online</div> : <div className = 'status status_offline'>offline</div>
+      this.state.status === true ? <div className = 'status'>online</div> : <div className = 'status status_offline'>offline</div>
       
     );
   }
