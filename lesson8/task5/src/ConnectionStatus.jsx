@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class ConnectionStatus extends Component {
   state = {
-      status: true
+      status: false
   }
 
   setStatus  = () => {
