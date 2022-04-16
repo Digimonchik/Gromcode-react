@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 export default class Life extends Component {
     constructor(props) {
         super(props)
+        state = {
+            status: 'working'
+        }
         console.log(`constructor: good place to create state`)
     }
 componentDidMount(){
@@ -22,7 +25,7 @@ componentWillUnmount() {
   render() {
       console.log('return React element to build DOM')
     return (
-      <div ></div>
+      <div>{this.state.status}</div>
     );
   }
 }
