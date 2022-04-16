@@ -17,6 +17,7 @@ componentDidUpdate(prevProps, prevState) {
 }
 shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate(nextProps, nextState): decide to render or not to render')
+    return true
 }
 
 componentWillUnmount() {
@@ -26,7 +27,7 @@ componentWillUnmount() {
   render() {
       console.log('return React element to build DOM')
     return (
-      <div>{this.state.status}</div>
+          <div>{this.state.status}</div>
     );
   }
 }
