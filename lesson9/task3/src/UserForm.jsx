@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export default class UserForm extends Component {
- handleSubmit = (e) => {
+ onSubmit = (e) => {
    e.preventDefault()
    const formData = [... new FormData(this.formRef)].reduce((
      acc, [name, value]) => ({...acc, [name]: value}), {})
@@ -48,7 +48,7 @@ setRef = node => {
     <label className="form-label" id="about" htmlFor="about">About</label>
     <textarea name="about" className="form-input"/>
   </div>
-  <button className="submit-button" type="submit" onClick={this.handleSubmit}>Submit</button>
+  <button className="submit-button" type="submit" onClick={this.onSubmit}>Submit</button>
 </form>
     );
   }
