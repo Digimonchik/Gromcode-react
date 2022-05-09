@@ -12,14 +12,14 @@ export default class Search extends Component {
         })
     }
     handleSubmit = (event) => {
-      alert('Search text: ' + this.state.value);        
+      alert('Search text: good restaurant');        
       event.preventDefault()
 
       }
   render() {
     return (
         <form className="search">
-        <input type="text" className="search__input" onChange = {this.handleChange} value ={'good restaurant'}/>
+        <input type="text" className="search__input" onChange = {this.handleChange} value ={this.state.value}/>
         <button className="search__button" onClick={this.handleSubmit}>Search</button>
       </form>
     );
