@@ -8,7 +8,7 @@ export default class UserForm extends Component {
     student: false
   }
   
-  handleSubmit = (e) => {
+  onSubmit = (e) => {
     e.preventDefault()
     const newUser = this.state
    console.log(newUser)
@@ -26,7 +26,7 @@ export default class UserForm extends Component {
   }
   render() {
     return (
-    <form className="login-form" onSubmit={this.handleSubmit}>
+    <form className="login-form" onSubmit={this.onSubmit}>
   <h1 className="form-title">Profile</h1>
   <div className="form-control">
     <label className="form-label" htmlFor="name">Name</label>
