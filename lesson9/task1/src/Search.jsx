@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Search extends Component {
     state = {
-        text: ''
+        text: 'good restaurant'
     }
     onInput = (event) => {
         this.setState({

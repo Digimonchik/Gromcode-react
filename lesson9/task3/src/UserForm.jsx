@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
 export default class UserForm extends Component {
- onSubmit = (e) => {
-   e.preventDefault()
-   const formData = [... new FormData(this.formRef)].reduce((
-     acc, [name, value]) => ({...acc, [name]: value}), {})
- this.props.createUser(formData)
-     }  
+
+  onSubmit = (e) => {
+    e.preventDefault()
+    const formData = [... new FormData(this.formRef)].reduce((
+      acc, [name, value]) => ({...acc, [name]: value}), {})
+     console.log(formData)
+      } 
 
 setRef = node => {
   this.formRef = node
