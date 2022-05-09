@@ -3,9 +3,13 @@ import UserForm from './UserForm';
 
 
 export default class App extends Component {
+
+  createUser = (obj) => {
+    console.log(obj)
+  }
     render() {
     return (
-      <UserForm/>
+      <UserForm onSubmit = {this.createUser}/>
     );
   }
 }
