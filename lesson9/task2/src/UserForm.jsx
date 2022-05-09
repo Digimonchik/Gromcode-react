@@ -11,7 +11,7 @@ export default class UserForm extends Component {
   onSubmit = (e) => {
     e.preventDefault()
     const newUser = this.state
-   console.log(newUser)
+   this.props.onSubmit(newUser)
   }
   handleChange = (e) => {
     const {name, value, type, checked} = e.target
