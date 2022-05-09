@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 export default class Search extends Component {
-    state = {
-        text: ''
-    }
+  constructor(props) {
+    super(props);
+    this.state = {text: ''};
+  }
+
     onInput = (event) => {
         this.setState({
             text: event.target.value
