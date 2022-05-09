@@ -19,7 +19,7 @@ export default class Search extends Component {
   render() {
     return (
         <form className="search">
-        <input type="text" className="search__input" onChange = {this.handleChange} value ={this.state.value}/>
+        <input type="text" className="search__input" onChange = {this.handleChange} value ={'good restaurant'}/>
         <button className="search__button" onClick={this.handleSubmit}>Search</button>
       </form>
     );
