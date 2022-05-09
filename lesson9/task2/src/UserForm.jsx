@@ -26,7 +26,7 @@ export default class UserForm extends Component {
   }
   render() {
     return (
-    <form className="login-form">
+    <form className="login-form" onSubmit={this.handleSubmit}>
   <h1 className="form-title">Profile</h1>
   <div className="form-control">
     <label className="form-label" htmlFor="name">Name</label>
@@ -61,7 +61,7 @@ export default class UserForm extends Component {
     <label className="form-label" id="about" htmlFor="about">About</label>
     <textarea name="about" className="form-input" onChange = {this.handleChange} value = {this.state.value} />
   </div>
-  <button className="submit-button" type="submit" onClick={this.handleSubmit}>Submit</button>
+  <button className="submit-button" type="submit">Submit</button>
 </form>
     );
   }
