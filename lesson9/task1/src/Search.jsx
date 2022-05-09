@@ -5,8 +5,6 @@ export default class Search extends Component {
     super(props);
     this.state = {value: ''};
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
   
   handleChange = (event) => {
@@ -21,9 +19,9 @@ export default class Search extends Component {
       }
   render() {
     return (
-        <form className="search">
+        <form className="search" onSubmit={this.handleSubmit}>
         <input type="text" className="search__input" onChange = {this.handleChange} value ={this.state.value}/>
-        <button className="search__button" onClick={this.handleSubmit}>Search</button>
+        <button className="search__button" type = 'submit'>Search</button>
       </form>
     );
   }
