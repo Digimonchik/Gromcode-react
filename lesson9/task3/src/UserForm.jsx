@@ -15,7 +15,7 @@ setRef = node => {
 
   render() {
     return (
-    <form ref = {this.setRef} className="login-form">
+    <form ref = {this.setRef} className="login-form" onSubmit={this.onSubmit}>
   <h1 className="form-title">Profile</h1>
   <div className="form-control">
     <label className="form-label" htmlFor="name">Name</label>
@@ -48,7 +48,7 @@ setRef = node => {
     <label className="form-label" id="about" htmlFor="about">About</label>
     <textarea name="about" className="form-input"/>
   </div>
-  <button className="submit-button" type="submit" onClick={this.onSubmit}>Submit</button>
+  <button className="submit-button" type="submit">Submit</button>
 </form>
     );
   }
