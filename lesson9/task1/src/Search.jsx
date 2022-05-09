@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Search extends Component {
     state = {
-        text: 'good restaurant'
+        text: ''
     }
     onInput = (event) => {
         this.setState({
@@ -10,9 +10,10 @@ export default class Search extends Component {
         })
     }
     handleClick = (event) => {
-        event.preventDefault()
         alert(`Search text: ${this.state.text}`)
-    }
+        event.preventDefault()
+
+      }
   render() {
     return (
         <form className="search">
