@@ -6,5 +6,5 @@ import App from './App';
 const rootElement = document.querySelector('#root')
 
 ReactDOM.render(
-    <UserForm/>, rootElement
+    <App/>, rootElement
 )
