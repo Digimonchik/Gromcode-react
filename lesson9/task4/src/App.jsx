@@ -7,7 +7,7 @@ export default class App extends Component {
     state = {
         count: '',
         filterText: '',
-        newUsersList: this.props.usersList
+        users: this.props.usersList
 
     }
 
@@ -25,7 +25,7 @@ export default class App extends Component {
     return (
         <div>
             <Filter onChange = {this.onChange} value = {this.state.filterText} count = {this.state.count}/>
-            <UsersList users = {this.state.newUsersList}/>
+            <UsersList users = {this.state.users}/>
         </div>
     );
   }
