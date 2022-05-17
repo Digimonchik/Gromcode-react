@@ -5,7 +5,7 @@ export default class Filter extends Component {
     return (
       <div>
         <div className="filter">
-    <span className="filter__count">{this.props.filterCount}</span>
+    <span className="filter__count">{this.props.count}</span>
     <input type="text" className="filter__input" onChange = {this.props.onChange} value = {this.props.filterText} />
   </div>
       </div>

@@ -5,7 +5,7 @@ import UsersList from './UsersList';
 
 export default class App extends Component {
     state = {
-        filterCount: '',
+        count: '',
         filterText: '',
         newUsersList: this.props.usersList
 
@@ -24,7 +24,7 @@ export default class App extends Component {
   render() {
     return (
         <div>
-            <Filter onChange = {this.onChange} value = {this.state.filterText} filterCount = {this.state.filterCount}/>
+            <Filter onChange = {this.onChange} value = {this.state.filterText} count = {this.state.count}/>
             <UsersList users = {this.state.newUsersList}/>
         </div>
     );
