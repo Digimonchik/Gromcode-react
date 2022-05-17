@@ -8,5 +8,5 @@ import App from './App';
 
 const rootElement = document.querySelector('#root') 
 ReactDOM.render(
-    <App usersList = {[]}/>, rootElement
+    <App users = {[]}/>, rootElement
 )
